@@ -1,13 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ani Stream</title>
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ani Stream - watch anime online</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><i class="fa-solid fa-play-circle"></i>Ani Stream</div>
+      <nav class="nav-tabs">
+        <a href="#" class="nav-tab active">Movies</a>
+        <a href="#" class="nav-tab ">Series</a>
+      </nav>
+
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Browse our anime catalogue..."
+        />
+      </div>
+      <div class="user-action">
+        <i class="fa-solid fa-cog" style="cursor:pointer;"></i>
+        <i class="fa-solid fa-user-circle" style="cursor:pointer; color:red"></i>
+      </div>
+    </header>
+
+   <!--  main-section -->
   
-  <script src="./scripts/script.js"></script>
-</body>
+   <div class="main-container">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">MENU</h3>
+        <a href="#" class="sidebar-item active">
+          <i class="fa-solid fa-home"></i>Home
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fa-solid fa-users"></i>Community
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fa-solid fa-calendar"></i>Calender
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">CATEGORIES</h3>
+        <a href="#" class="sidebar-item ">
+          <i class="fa-solid fa-film"></i>Movies
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fa-solid fa-computer"></i>Series
+        </a>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">LIBRARY</h3>
+        <a href="#" class="sidebar-item ">
+          <i class="fa-solid fa-download"></i>Recent
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fa-solid fa-clock"></i>Downloaded
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">GENERAL</h3>
+        <a href="#" class="sidebar-item ">
+          <i class="fa-solid fa-cog"></i>Settings
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fa-solid fa-sign-in"></i>Sign In
+        </a>
+      </div>
+    </aside>
+
+
+    <main class="content">
+      <div class="hero-section">
+        <div class="hero-oveylay">
+          <div class="hero-content">
+            <h1 class="hero-title">ONE PIECE</h1>
+            <p class="hero-description">
+              "One Piece" is an epic adventure series that follows Monkey D. Luffy—a rubber-powered boy—and his loyal Straw Hat Pirates as they sail the dangerous seas to find a fabled ultimate treasure and achieve his dream of becoming the King of the Pirates.
+            </p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-play"></i>Story</a>
+              <a href="#" class="btn btn-secondary"><i class="fa-solid fa-users"></i>Actors</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title">Top Rated Anime</h2>
+        <div class="anime-grid" id="animeGrid">
+          <!-- anime cards loaded via api -->
+        </div>
+
+      </section>
+    </main>
+
+    <div class="sidebar-right">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">POPULAR ANIME</h3>
+        <div class="popular-item">
+          <div class="popular-poster" style="background-image: url();"></div>
+          <div class="popular-info">
+            <h4>Black Clover</h4>
+            <p>4 Seasons</p>
+          </div>
+        </div>
+
+        <div class="popular-item">
+          <div class="popular-poster" style="background-image: url();"></div>
+          <div class="popular-info">
+            <h4>Haikyu</h4>
+            <p>4 Seasons</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">WATCHLIST</h3>
+        <div class="popular-item">
+          <div class="popular-poster" style="background-image: url();"></div>
+          <div class="popular-info">
+            <h4>My hero Academia</h4>
+            <p>4 Seasons</p>
+          </div>
+        </div>
+
+        <div class="popular-item">
+          <div class="popular-poster" style="background-image: url();"></div>
+          <div class="popular-info">
+            <h4>Bleach</h4>
+            <p>4 Seasons</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+   </div>
+
+    <script src="./scripts/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/920bbfd7b4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
