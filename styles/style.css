@@ -51,11 +51,11 @@ body{
 
 .nav-tab.active{
   color:white;
-  border-bottom: 2px solid var(--active-tab-bar);
+  border-bottom: 2px solid var(--background-color);
 }
 .nav-tab:hover{
   color:white;
-  background-color: var(--active-tab-bar);
+  background-color: var(--background-color);
 }
 .search-bar{
   display:flex;
@@ -107,7 +107,7 @@ body{
   padding:.7rem 1rem;
 }
 .sidebar-item:hover{
-  background-color: var(--active-tab-bar);
+  background-color: var(--background-color);
   color:var(--nav-tab-color);
 }
 .sidebar-item.active{
